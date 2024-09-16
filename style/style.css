@@ -439,13 +439,13 @@ body {
 .hero-project .p-hero {
   font-size: 1.2rem;
   text-align: center;
-  padding: 0 2rem;
 }
 
 .tamplate-project {
   display: grid;
   grid-template-columns: 1fr 0.7fr;
   height: 25rem;
+  width: 100%;
   border-radius: 5px;
   overflow: hidden;
   margin: 4rem 0;
