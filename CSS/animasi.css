@@ -1,0 +1,62 @@
+/* ANIMASI HALAMAN  */
+.transform {
+  opacity: 0; /* Awalnya tidak terlihat */
+  transform: translateY(-50px); /* Posisi awal di atas */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Durasi dan transisi */
+}
+
+/* Ketika halaman dimuat, tambahkan class ini di JavaScript */
+.transform.visible {
+  opacity: 1; /* Muncul secara penuh */
+  transform: translateY(0); /* Kembali ke posisi normal */
+}
+
+/* ANIMASI UNTUK BAGIAN KONTEN */
+.animasi {
+  opacity: 0;
+  transform: translateY(50px); /*posisi awal diatas*/
+  transition: opacity 1s ease-out, transform 0.8s ease-out;
+}
+
+.animasi.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* animasi untuk turun naik di tombol button */
+
+.btn-12 {
+  animation: moveUpDown1 2s ease-in-out infinite;
+}
+
+@keyframes moveUpDown1 {
+  0% {
+    transform: translateY(0); /*diposisi awal */
+  }
+
+  50% {
+    transform: translateY(-5px); /* bergerak naik*/
+  }
+
+  100% {
+    transform: translateY(0); /*kembali keposisi awal*/
+  }
+}
+
+.btn-22 {
+  animation: moveUpDown2 2s ease-in-out infinite;
+}
+
+@keyframes moveUpDown2 {
+  0% {
+    transform: translateY(0); /*diposisi awal */
+  }
+
+  50% {
+    transform: translateY(5px); /* bergerak naik*/
+  }
+
+  100% {
+    transform: translateY(0); /*kembali keposisi awal*/
+  }
+}

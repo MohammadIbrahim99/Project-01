@@ -1,0 +1,549 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  font-family: "Roboto";
+  background-color: var(--colorBody);
+}
+
+:root {
+  --colorBody: #f2efe5;
+  --colorSecond: #b4b4b8;
+  --collorThird: #c7c8cc;
+}
+
+/* Header & Navbar */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 6.5rem;
+  background-color: var(--colorBody);
+}
+
+.logo ul {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.logo .profesi {
+  list-style: none;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.logo .line {
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.logo .name {
+  position: relative;
+  list-style: none;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.logo .name::before {
+  content: ""; /* Konten kosong karena hanya kotak yang ditampilkan */
+  display: inline-block;
+  width: 18px; /* Ukuran lebar kotak */
+  height: 18px; /* Ukuran tinggi kotak */
+  background-color: var(--colorSecond); /* Warna kotak */
+  position: absolute;
+  left: -25px; /* Atur jarak kotak dari teks */
+  top: 50%; /* Posisikan di tengah vertikal */
+  transform: translateY(-50%); /* Sesuaikan agar di tengah */
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  color: var(--colorSecond);
+}
+
+/* Hero */
+
+.container-1 {
+  display: grid;
+  grid-template-columns: 1.3fr 2fr;
+  z-index: 1;
+  position: relative;
+}
+
+.hero-left {
+  height: 80vh;
+  background-color: var(--colorSecond);
+}
+
+.hero-right {
+  height: 80vh;
+  background-color: var(--colorBody);
+  padding-left: 8rem;
+  padding-bottom: 11rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-right h1 {
+  font-size: 7rem;
+}
+
+.hero-right h4 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.paragraph {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  width: 24rem;
+}
+
+.paragraph p {
+  font-size: 1.5rem;
+  padding-top: 5px;
+  font-weight: 20;
+}
+
+.hero-right .buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.hero-right button {
+  padding: 10px 50px;
+  border-radius: 50px;
+}
+
+.hero-right button a {
+  text-decoration: none;
+}
+
+.buttons a {
+  border: 2px solid;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-1 {
+  background-color: var(--colorSecond);
+  color: var(--colorBody);
+}
+
+.btn-1:hover {
+  background-color: var(--colorBody);
+  color: var(--colorSecond);
+}
+
+.btn-2 {
+  background-color: var(--colorBody);
+  color: var(--colorSecond);
+}
+
+.btn-2:hover {
+  background-color: var(--colorSecond);
+  color: var(--colorBody);
+}
+
+.tamplate {
+  height: 30rem;
+  width: 23.5rem;
+  background-color: var(--collorThird);
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  top: 15.5%;
+  left: 23%;
+  box-shadow: -10px 10px 15px rgb(0, 0, 0, 0.1);
+}
+
+.back-image {
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+  background-color: var(--colorBody);
+  position: absolute;
+  margin: 3rem 4.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.tamplate img {
+  height: 22rem;
+  width: 22rem;
+  top: 1%;
+  position: absolute;
+  display: block;
+  z-index: 2;
+  object-fit: cover; /* Menjaga proporsi gambar agar sesuai dengan area */
+}
+
+.tamplate h1 {
+  margin-top: 18rem;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.line-image {
+  height: 3px;
+  background-color: var(--colorSecond);
+  margin: 1rem 9.5rem;
+}
+
+.tamplate h2 {
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.medsos-tamplate {
+  height: 5rem;
+  margin-top: 1rem;
+  background-color: var(--colorBody);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.medsos-tamplate ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  gap: 1.2rem;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 5rem;
+  background-color: var(--colorBody);
+  right: 0;
+  left: 0;
+}
+
+.tag-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 4rem;
+}
+
+.call h1,
+.email h1,
+.follow h1 {
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.call p,
+.email p {
+  padding-top: 8px;
+  font-size: 0.9rem;
+}
+
+.follow svg {
+  height: 1.5rem;
+  padding-top: 8px;
+  margin: 0 5px;
+}
+
+.follow a {
+  text-decoration: none;
+}
+
+/* RESUME */
+
+.hero-resume,
+.hero-project,
+.hero-contact {
+  width: 100%;
+  background-color: var(--collorThird);
+  padding: 5rem 30rem;
+}
+
+.tag-resume,
+.tag-project,
+.tag-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  position: relative;
+}
+
+.tag-resume::before,
+.tag-project::before,
+.tag-contact::before {
+  content: ""; /* Konten kosong karena hanya kotak yang ditampilkan */
+  display: inline-block;
+  width: 19px; /* Ukuran lebar kotak */
+  height: 19px; /* Ukuran tinggi kotak */
+  background-color: var(--colorSecond); /* Warna kotak */
+  position: absolute;
+  left: 37%; /* Atur jarak kotak dari teks */
+  top: 50%; /* Posisikan di tengah vertikal */
+  transform: translateY(-50%); /* Sesuaikan agar di tengah */
+}
+
+.tag-project::before {
+  left: 36%;
+}
+
+.tag-contact::before {
+  left: 35.5%;
+}
+
+.tag-resume ul,
+.tag-project ul,
+.tag-contact ul {
+  list-style-type: none;
+}
+
+.tag2-resume {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.tag2-resume h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.tag2-resume a {
+  background-color: var(--colorSecond);
+  text-decoration: none;
+  border: 2px solid var(--colorBody);
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.tag2-resume a:hover {
+  background-color: var(--colorBody);
+  border: 2px solid black;
+  transition: 0.2s ease-in-out;
+}
+
+.education,
+.education-2 {
+  background-color: var(--colorBody);
+  height: 25rem;
+  margin-top: 10px;
+  border-radius: 7px;
+  padding: 6rem 4rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.education-2 {
+  margin-top: 5rem;
+}
+
+.education-left {
+  width: 70%;
+}
+
+.education-left p {
+  padding-top: 20px;
+}
+
+.education-right {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.education-right .p2 {
+  padding-top: 1rem;
+}
+
+/* Hero Project */
+.tag-project {
+  margin-bottom: 5rem;
+}
+
+.hero-project .p-hero {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.tamplate-project {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  background-color: aqua;
+  height: 25rem;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 4rem 0;
+}
+.project-right {
+  height: 100%;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+.project-right img {
+  height: 100%;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.project-right img:hover {
+  transform: scale(1.1);
+}
+
+.project-left {
+  display: flex;
+  background-color: var(--colorBody);
+  flex-direction: column;
+  padding: 0 2.5rem;
+  position: relative;
+}
+
+.project-left .tag-name {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 5rem 0 5px 0rem;
+}
+
+.project-left ul {
+  list-style: none;
+}
+
+.project-left .role ul {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 3rem;
+}
+
+.role ul li {
+  border: 2px solid;
+  padding: 2px 3px;
+  font-weight: 800;
+}
+
+.tag-name {
+  display: flex;
+  padding: 0;
+}
+
+.tag-name .content {
+  height: 100%;
+  width: 15px;
+  background-color: black;
+  transform: translateX(-270%);
+}
+.project-name {
+  transform: translateX(-10%);
+}
+
+.project-left p {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+/* CONTACT */
+
+.hero-contact {
+  background-color: var(--collorThird);
+}
+
+form {
+  margin-top: 5rem;
+}
+form p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  height: 3rem;
+  border: 1px solid;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+
+form input:hover,
+form textarea:hover,
+.submit:hover {
+  background-color: var(--colorSecond);
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+}
+
+.container-name,
+.container-email {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.container-email,
+.subject {
+  margin: 1.5rem 0;
+}
+
+form textarea {
+  height: 9rem;
+  resize: none;
+}
+
+.submit {
+  padding: 5px 10%;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  border-radius: 50px;
+  display: block;
+  margin: 1rem auto;
+  cursor: pointer;
+}
