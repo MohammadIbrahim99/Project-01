@@ -100,8 +100,7 @@ body {
 .hero-right {
   height: 80vh;
   background-color: var(--colorBody);
-  padding-left: 8rem;
-  padding-bottom: 11rem;
+  padding: 3rem 0 11rem 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,7 +180,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  top: 15.5%;
+  top: 11.5%;
   left: 23%;
   box-shadow: -10px 10px 15px rgb(0, 0, 0, 0.1);
 }
@@ -291,11 +290,22 @@ body {
 /* RESUME */
 
 .hero-resume,
-.hero-project,
-.hero-contact {
+.hero-project {
   width: 100%;
   background-color: var(--collorThird);
   padding: 5rem 30rem;
+}
+
+.hero-resume {
+  width: 100%;
+  background-color: var(--collorThird);
+  padding: 5rem 25rem;
+}
+
+.hero-contact {
+  width: 100%;
+  background-color: var(--collorThird);
+  padding: 5rem 25rem;
 }
 
 .tag-resume,
@@ -319,17 +329,17 @@ body {
   height: 19px; /* Ukuran tinggi kotak */
   background-color: var(--colorSecond); /* Warna kotak */
   position: absolute;
-  left: 37%; /* Atur jarak kotak dari teks */
+  left: 37.5%; /* Atur jarak kotak dari teks */
   top: 50%; /* Posisikan di tengah vertikal */
   transform: translateY(-50%); /* Sesuaikan agar di tengah */
 }
 
 .tag-project::before {
-  left: 36%;
+  left: 36.5%;
 }
 
 .tag-contact::before {
-  left: 35.5%;
+  left: 36%;
 }
 
 .tag-resume ul,
@@ -374,7 +384,7 @@ body {
   height: 25rem;
   margin-top: 10px;
   border-radius: 7px;
-  padding: 6rem 4rem;
+  padding: 3rem 2rem;
   display: flex;
   gap: 3rem;
 }
@@ -385,6 +395,20 @@ body {
 
 .education-left {
   width: 70%;
+}
+
+.education-left h3,
+.education-left h4 {
+  padding-top: 5px;
+}
+
+.education-left h3 {
+  font-weight: 500;
+}
+
+.education-left h4,
+.education-left p {
+  font-weight: 200;
 }
 
 .education-left p {
@@ -415,7 +439,6 @@ body {
 .tamplate-project {
   display: grid;
   grid-template-columns: 1fr 0.7fr;
-  background-color: aqua;
   height: 25rem;
   border-radius: 5px;
   overflow: hidden;
