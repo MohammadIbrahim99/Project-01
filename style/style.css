@@ -289,8 +289,7 @@ body {
 
 /* RESUME */
 
-.hero-resume,
-.hero-project {
+.hero-resume {
   width: 100%;
   background-color: var(--collorThird);
   padding: 5rem 30rem;
@@ -426,6 +425,13 @@ body {
 }
 
 /* Hero Project */
+
+.hero-project {
+  width: 100%;
+  background-color: var(--collorThird);
+  padding: 5rem 30rem;
+}
+
 .tag-project {
   margin-bottom: 5rem;
 }
