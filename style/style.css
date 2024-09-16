@@ -271,12 +271,6 @@ body {
   padding-bottom: 5px;
 }
 
-.call p,
-.email p {
-  padding-top: 8px;
-  font-size: 0.9rem;
-}
-
 .follow svg {
   height: 1.5rem;
   padding-top: 8px;
@@ -334,7 +328,7 @@ body {
 }
 
 .tag-project::before {
-  left: 36.5%;
+  left: 38.5%;
 }
 
 .tag-contact::before {
@@ -454,6 +448,43 @@ body {
   height: 100%;
   border: 2px solid black;
   overflow: hidden;
+  position: relative;
+}
+
+.project-right .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.project-right:hover .overlay {
+  opacity: 1;
+}
+
+.icon-link svg {
+  fill: white;
+  width: 3rem;
+  height: 3rem;
+}
+
+.icon-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.project-right:hover .icon-link {
+  opacity: 1;
+  z-index: 2;
 }
 
 .project-right img {
@@ -462,7 +493,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.project-right img:hover {
+.project-right:hover img {
   transform: scale(1.1);
 }
 
