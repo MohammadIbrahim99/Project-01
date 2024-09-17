@@ -1,19 +1,338 @@
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
+  /*Navbar*/
+
+  .navbar {
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--collorThird);
+    transition: 0.3s;
+    z-index: 99;
+    padding-top: 5rem;
+  }
+
+  .navbar.active {
+    top: 0;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar ul li {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .navbar ul a:hover {
+    color: var(--colorSecond);
+  }
+
+  /* hamburger menu */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+  }
+
+  #hamburger {
+    height: 2.5rem;
+    width: 2.5rem;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  #hamburger span {
+    height: 5px;
+    width: 1.7rem;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    top: 8.5%;
+    right: 8px;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+    z-index: 100;
+  }
+
+  #hamburger span:nth-child(1) {
+    top: 6.7%;
+    right: 32px;
+    width: 0.7rem;
+  }
+
+  #hamburger span:nth-child(3) {
+    top: 10.3%;
+    height: 5px;
+    width: 0.7rem;
+    right: 17px;
+  }
+
+  #hamburger.active span:nth-child(1) {
+    top: 8%;
+    width: 1rem;
+    height: 3.5px;
+    transform: translate(-30%, -50%) rotate(45deg);
+  }
+  #hamburger.active span:nth-child(2) {
+    height: 3.5px;
+    transform: translate(-70%, -50%) rotate(-45deg);
+  }
+  #hamburger.active span:nth-child(3) {
+    top: 8.5%;
+    height: 3.5px;
+    width: 1rem;
+    transform: translate(-75%, 87%) rotate(45deg);
+  }
+
+  .logo .name::before {
+    content: ""; /* Konten kosong karena hanya kotak yang ditampilkan */
+    display: inline-block;
+    width: 12px; /* Ukuran lebar kotak */
+    height: 12px; /* Ukuran tinggi kotak */
+    background-color: var(--colorSecond); /* Warna kotak */
+    position: absolute;
+    left: -20px; /* Atur jarak kotak dari teks */
+    top: 50%; /* Posisikan di tengah vertikal */
+    transform: translateY(-50%); /* Sesuaikan agar di tengah */
+  }
+
+  .logo .name {
+    font-size: clamp(0.8rem, 1vw, 1.7rem);
+  }
+
+  .logo .line,
+  .logo .profesi {
+    font-size: clamp(0.6rem, 1.5vw, 2.2rem);
+  }
+
+  /* HEADER */
+
+  .container {
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* HERO */
+  .hero {
+    width: 100%;
+  }
+  .container-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    width: 100%;
+  }
+
+  .hero-left {
+    height: 30vh;
+    background-color: var(--colorbody);
+  }
+  .hero-right {
+    background-color: var(--colorSecond);
+  }
+
+  .tamplate {
+    height: 27rem;
+    width: 17rem;
+    background-color: var(--collorThird);
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -10px 10px 15px rgb(0, 0, 0, 0.1);
+
+    /* Pemusatan absolut ke tengah */
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .back-image {
+    height: 14rem;
+    width: 14rem;
+    top: 0;
+    border-radius: 50%;
+    background-color: var(--colorBody);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .tamplate img {
+    height: 18rem;
+    width: 18rem;
+
+    position: absolute;
+    display: block;
+    z-index: 2;
+    object-fit: cover; /* Menjaga proporsi gambar agar sesuai dengan area */
+  }
+
+  .tamplate h1 {
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+
+  .line-image {
+    background-color: var(--colorSecond);
+    padding: 1px 30px;
+    margin: 4px 9.5rem;
+  }
+
+  .tamplate h2 {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  .medsos-tamplate {
+    width: 100%;
+    margin-top: 0.5rem;
+    background-color: var(--colorBody);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .medsos-tamplate ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1.2rem;
+  }
+
+  /* HERO RIGHT */
+
+  .hero-right {
+    width: 100%;
+    padding: 0 0.5rem 20rem 0.5rem;
+    padding-top: 24rem;
+    display: fixed;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-right h1 {
+    font-size: 3rem;
+  }
+
+  .buttons a {
+    padding: 7px 25px;
+  }
+
+  .btn-1:hover {
+    background-color: var(--colorBody);
+    color: var(--colorSecond);
+  }
+
+  .btn-2:hover {
+    background-color: var(--colorSecond);
+    color: var(--colorBody);
+  }
+
+  .hero-right h4 {
+    font-size: 1rem;
+  }
+
+  .paragraph {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .paragraph p {
+    padding: 10px 1.3rem;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    width: 100%;
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr;
+    padding: 2.5rem 2rem;
+    background-color: var(--colorBody);
+    right: 0;
+    left: 0;
+  }
+
+  .tag-1 p {
+    grid-row: 2;
+    margin-top: 1rem;
+    padding-left: 0;
+    font-size: 0.7rem;
+  }
+
+  .call p,
+  .email p,
+  .follow p {
+    font-size: 0.7rem;
+  }
+
+  .tag-2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: start;
+    text-align: start;
+    gap: 1rem;
+    grid-row: 1;
+  }
+
+  .call h1,
+  .email h1,
+  .follow h1 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+  }
+
+  .follow svg {
+    height: 1.2rem;
+    padding-top: 5px;
+    margin: 0;
+    padding-right: 13px;
+  }
+
+  .follow a {
+    text-decoration: none;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  /*Navbar*/
+}
+
 @media only screen and (min-width: 768px) {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  /*Navbar*/
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  /*Navbar*/
 }

@@ -20,17 +20,23 @@ body {
 /* Header & Navbar */
 
 .container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 3rem 6.5rem;
   background-color: var(--colorBody);
+  position: relative;
 }
 
 .logo ul {
   display: flex;
   align-items: center;
   gap: 7px;
+}
+
+.hamburger {
+  right: -100%;
 }
 
 .logo .profesi {
