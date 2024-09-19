@@ -907,7 +907,7 @@
 
   .hero-left {
     background-color: var(--colorBody);
-    height: 40vh;
+    height: 60vh;
   }
   .hero-right {
     background-color: var(--colorSecond);
