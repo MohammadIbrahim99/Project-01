@@ -40,6 +40,7 @@
     justify-content: space-between;
     align-items: center;
     margin-right: 1rem;
+    height: 4rem;
   }
 
   #hamburger {
@@ -47,6 +48,7 @@
     width: 2.5rem;
     align-items: center;
     cursor: pointer;
+    z-index: 1000;
   }
 
   #hamburger span {
@@ -55,7 +57,7 @@
     background-color: black;
     border-radius: 25px;
     position: absolute;
-    top: 8.5%;
+    top: 5%;
     right: 8px;
     transform: translate(-50%, -50%);
     transition: all 0.5s;
@@ -63,33 +65,35 @@
   }
 
   #hamburger span:nth-child(1) {
-    top: 6.7%;
+    top: 3%;
     right: 32px;
     width: 0.7rem;
   }
 
   #hamburger span:nth-child(3) {
-    top: 10.3%;
+    top: 7%;
     height: 5px;
     width: 0.7rem;
     right: 17px;
   }
 
   #hamburger.active span:nth-child(1) {
-    top: 8%;
+    top: 4%;
     width: 1rem;
     height: 3.5px;
-    transform: translate(-30%, -50%) rotate(45deg);
+    transform: translate(1%, 30%) rotate(45deg);
   }
   #hamburger.active span:nth-child(2) {
     height: 3.5px;
-    transform: translate(-70%, -50%) rotate(-45deg);
+
+    transform: translate(-50%, -50%) rotate(-50deg);
   }
   #hamburger.active span:nth-child(3) {
-    top: 8.5%;
+    top: 5%;
+    /* background-color: aqua; */
     height: 3.5px;
     width: 1rem;
-    transform: translate(-75%, 87%) rotate(45deg);
+    transform: translate(-40%, 75%) rotate(45deg);
   }
 
   .logo .name::before {
@@ -117,7 +121,6 @@
 
   .container {
     padding: 3rem 2rem;
-    margin-bottom: 2rem;
   }
 
   /* HERO */
@@ -424,6 +427,7 @@
     justify-content: space-between;
     align-items: center;
     margin-right: 1rem;
+    height: 4rem;
   }
 
   #hamburger {
@@ -431,6 +435,7 @@
     width: 2.5rem;
     align-items: center;
     cursor: pointer;
+    z-index: 1000;
   }
 
   #hamburger span {
@@ -439,7 +444,7 @@
     background-color: black;
     border-radius: 25px;
     position: absolute;
-    top: 8.5%;
+    top: 5%;
     right: 8px;
     transform: translate(-50%, -50%);
     transition: all 0.5s;
@@ -447,33 +452,35 @@
   }
 
   #hamburger span:nth-child(1) {
-    top: 6.7%;
+    top: 3%;
     right: 32px;
     width: 0.7rem;
   }
 
   #hamburger span:nth-child(3) {
-    top: 10.3%;
+    top: 7%;
     height: 5px;
     width: 0.7rem;
     right: 17px;
   }
 
   #hamburger.active span:nth-child(1) {
-    top: 8%;
+    top: 4%;
     width: 1rem;
     height: 3.5px;
-    transform: translate(-30%, -50%) rotate(45deg);
+    transform: translate(1%, 30%) rotate(45deg);
   }
   #hamburger.active span:nth-child(2) {
     height: 3.5px;
-    transform: translate(-70%, -50%) rotate(-45deg);
+
+    transform: translate(-50%, -50%) rotate(-50deg);
   }
   #hamburger.active span:nth-child(3) {
-    top: 8.5%;
+    top: 5%;
+    /* background-color: aqua; */
     height: 3.5px;
     width: 1rem;
-    transform: translate(-75%, 87%) rotate(45deg);
+    transform: translate(-40%, 75%) rotate(45deg);
   }
 
   .logo .name::before {
@@ -501,7 +508,6 @@
 
   .container {
     padding: 3rem 2rem;
-    margin-bottom: 2rem;
   }
 
   /* HERO */
@@ -810,6 +816,7 @@
     justify-content: space-between;
     align-items: center;
     margin-right: 1rem;
+    height: 4rem;
   }
 
   #hamburger {
@@ -817,6 +824,7 @@
     width: 2.5rem;
     align-items: center;
     cursor: pointer;
+    z-index: 1000;
   }
 
   #hamburger span {
@@ -825,7 +833,7 @@
     background-color: black;
     border-radius: 25px;
     position: absolute;
-    top: 8.5%;
+    top: 5%;
     right: 8px;
     transform: translate(-50%, -50%);
     transition: all 0.5s;
@@ -833,33 +841,35 @@
   }
 
   #hamburger span:nth-child(1) {
-    top: 6.7%;
+    top: 3%;
     right: 32px;
     width: 0.7rem;
   }
 
   #hamburger span:nth-child(3) {
-    top: 10.3%;
+    top: 7%;
     height: 5px;
     width: 0.7rem;
     right: 17px;
   }
 
   #hamburger.active span:nth-child(1) {
-    top: 8%;
+    top: 4%;
     width: 1rem;
     height: 3.5px;
-    transform: translate(-30%, -50%) rotate(45deg);
+    transform: translate(1%, 30%) rotate(45deg);
   }
   #hamburger.active span:nth-child(2) {
     height: 3.5px;
-    transform: translate(-70%, -50%) rotate(-45deg);
+
+    transform: translate(-50%, -50%) rotate(-50deg);
   }
   #hamburger.active span:nth-child(3) {
-    top: 8.5%;
+    top: 5%;
+    /* background-color: aqua; */
     height: 3.5px;
     width: 1rem;
-    transform: translate(-75%, 87%) rotate(45deg);
+    transform: translate(-40%, 75%) rotate(45deg);
   }
 
   .logo .name::before {
@@ -881,13 +891,6 @@
   .logo .line,
   .logo .profesi {
     font-size: clamp(1.2rem, 2.3vw, 1.6rem);
-  }
-
-  /* HEADER */
-
-  .container {
-    padding: 3rem 2rem;
-    margin-bottom: 2rem;
   }
 
   /* HERO */
@@ -1156,6 +1159,31 @@
 @media (min-width: 991px) and (max-width: 1200px) {
   /* HEADER  */
 
+  header {
+    margin-right: 0;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+  }
+
+  .logo .name::before {
+    content: ""; /* Konten kosong karena hanya kotak yang ditampilkan */
+    display: inline-block;
+    width: 18px; /* Ukuran lebar kotak */
+    height: 18px; /* Ukuran tinggi kotak */
+    background-color: var(--colorSecond); /* Warna kotak */
+    position: absolute;
+    left: -25px; /* Atur jarak kotak dari teks */
+    top: 50%; /* Posisikan di tengah vertikal */
+    transform: translateY(-50%); /* Sesuaikan agar di tengah */
+  }
   .logo .name {
     font-size: clamp(1.2rem, 3vw, 2rem);
   }
@@ -1436,6 +1464,7 @@
   /* RESUME */
 
   .hero-resume {
+    padding-top: 10rem;
     padding-left: clamp(15rem, 24vw, 20rem);
     padding-right: clamp(15rem, 24vw, 20rem);
     justify-content: center;
@@ -1565,6 +1594,19 @@
   }
 
   /* HERO */
+
+  header {
+    margin-right: 0;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+  }
 
   .container-1 {
     display: grid;
@@ -1797,6 +1839,7 @@
     padding-right: 25rem;
     justify-content: center;
     width: 100%;
+    padding-top: 10rem;
   }
 
   .tag-resume ul li {
