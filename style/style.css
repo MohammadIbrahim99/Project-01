@@ -47,14 +47,14 @@ body {
 
 .logo .line {
   list-style: none;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   font-weight: 300;
 }
 
 .logo .name {
   position: relative;
   list-style: none;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   font-weight: 900;
 }
 
@@ -106,9 +106,9 @@ body {
 .hero-right {
   height: 80vh;
   background-color: var(--colorBody);
-  padding: 3rem 0 11rem 10rem;
   display: flex;
   flex-direction: column;
+
   justify-content: center;
 }
 
