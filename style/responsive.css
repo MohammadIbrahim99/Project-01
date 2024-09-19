@@ -156,7 +156,7 @@
     box-shadow: -10px 10px 15px rgb(0, 0, 0, 0.1);
 
     /* Pemusatan absolut ke tengah */
-    top: 20%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -224,7 +224,7 @@
   .hero-right {
     width: 100%;
     padding: 0 0.5rem;
-    padding-bottom: 20rem;
+    padding-bottom: 15rem;
     display: fixed;
     padding-top: 25rem;
     align-items: center;
@@ -522,7 +522,7 @@
   }
 
   .hero-left {
-    height: 30vh;
+    height: 40vh;
     background-color: var(--colorbody);
   }
   .hero-right {
@@ -543,7 +543,7 @@
     box-shadow: -10px 10px 15px rgb(0, 0, 0, 0.1);
 
     /* Pemusatan absolut ke tengah */
-    top: 20%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -612,8 +612,8 @@
     width: 100%;
     padding: 0 0.5rem;
     display: fixed;
-    padding-top: 35rem;
-    padding-bottom: 20rem;
+    padding-top: 30rem;
+    padding-bottom: 15rem;
     align-items: center;
     justify-content: end;
     text-align: center;
@@ -816,7 +816,7 @@
     justify-content: space-between;
     align-items: center;
     margin-right: 1rem;
-    height: 4rem;
+    padding: 3rem 0;
   }
 
   #hamburger {
@@ -906,6 +906,7 @@
 
   .hero-left {
     background-color: var(--colorBody);
+    height: 40vh;
   }
   .hero-right {
     background-color: var(--colorSecond);
@@ -925,7 +926,7 @@
     box-shadow: -10px 10px 15px rgb(0, 0, 0, 0.1);
 
     /* Pemusatan absolut ke tengah */
-    top: 20%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -994,8 +995,8 @@
     width: 100%;
     padding: 0 0.5rem;
     display: flex;
-    padding-top: 35rem;
-    padding-bottom: 20rem;
+    padding-top: 30rem;
+    padding-bottom: 15rem;
     align-items: center;
     text-align: center;
   }
@@ -1158,10 +1159,6 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 991px) and (max-width: 1200px) {
   /* HEADER  */
-
-  header {
-    margin-right: 0;
-  }
   .container {
     display: flex;
     align-items: center;
@@ -1169,7 +1166,6 @@
     top: 50%;
     left: 0;
     right: 0;
-    z-index: 10;
     width: 100%;
   }
 
@@ -1236,6 +1232,7 @@
 
   .container-1 {
     display: grid;
+    margin-top: 5rem;
     grid-template-columns: 1.3fr 2fr;
     z-index: 1;
     position: relative;
@@ -1256,7 +1253,7 @@
     justify-content: center;
     text-align: start;
     align-items: start;
-    padding-top: 0;
+    padding-top: 7rem;
     padding-left: 3rem;
     padding-bottom: 0;
     width: 100%;
@@ -1264,6 +1261,10 @@
 
   .hero-right h1 {
     font-size: 5rem;
+  }
+
+  .buttons {
+    padding-left: 2rem;
   }
 
   .hero-right h4 {
@@ -1283,13 +1284,13 @@
     padding-top: 5px;
     font-weight: 20;
     padding-bottom: 9rem;
+    padding-left: 2rem;
   }
 
   .hero-right .buttons {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
-    padding-left: 3.5rem;
   }
 
   .hero-right button {
@@ -1298,11 +1299,11 @@
   }
 
   .hero-right h4 {
-    padding-left: 3.5rem;
+    padding-left: 2rem;
   }
 
   .hero-right h1 {
-    padding-left: 6.5rem;
+    padding-left: 2rem;
   }
 
   .hero-right button a {
@@ -1614,6 +1615,7 @@
     z-index: 1;
     position: relative;
     gap: 6rem;
+    margin-top: 5rem;
   }
 
   .hero-left {
@@ -1631,7 +1633,7 @@
     justify-content: center;
     text-align: start;
     align-items: start;
-    padding-top: 0;
+    padding-top: 5rem;
     padding-bottom: 0;
     width: 100%;
   }
