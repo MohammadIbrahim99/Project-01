@@ -384,6 +384,343 @@
   .education-right {
     font-size: clamp(0.7rem, 2.5vw, 1rem);
   }
+
+  /* PROJECT */
+
+  .container {
+    padding: 3rem 2rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+    height: 4rem;
+  }
+
+  #hamburger {
+    height: 2.5rem;
+    width: 2.5rem;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  #hamburger span {
+    height: 5px;
+    width: 1.7rem;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    top: 5%;
+    right: 8px;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+    z-index: 100;
+  }
+
+  #hamburger span:nth-child(1) {
+    top: 3%;
+    right: 32px;
+    width: 0.7rem;
+  }
+
+  #hamburger span:nth-child(3) {
+    top: 7%;
+    height: 5px;
+    width: 0.7rem;
+    right: 17px;
+  }
+
+  #hamburger.active span:nth-child(1) {
+    top: 4%;
+    width: 1rem;
+    height: 3.5px;
+    transform: translate(1%, 30%) rotate(45deg);
+  }
+  #hamburger.active span:nth-child(2) {
+    height: 3.5px;
+
+    transform: translate(-50%, -50%) rotate(-50deg);
+  }
+  #hamburger.active span:nth-child(3) {
+    top: 5%;
+    /* background-color: aqua; */
+    height: 3.5px;
+    width: 1rem;
+    transform: translate(-40%, 75%) rotate(45deg);
+  }
+
+  .logo .name::before {
+    content: ""; /* Konten kosong karena hanya kotak yang ditampilkan */
+    display: inline-block;
+    width: 12px; /* Ukuran lebar kotak */
+    height: 12px; /* Ukuran tinggi kotak */
+    background-color: var(--colorSecond); /* Warna kotak */
+    position: absolute;
+    left: -20px; /* Atur jarak kotak dari teks */
+    top: 50%; /* Posisikan di tengah vertikal */
+    transform: translateY(-50%); /* Sesuaikan agar di tengah */
+  }
+
+  .logo .name {
+    font-size: clamp(0.8rem, 3.5vw, 1.5rem);
+  }
+
+  .logo .line,
+  .logo .profesi {
+    font-size: clamp(0.6rem, 3vw, 1.2rem);
+  }
+
+  .navbar {
+    position: fixed;
+    top: -150%;
+    width: 100%;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--collorThird);
+    transition: all 0.6s;
+    z-index: 99;
+    padding-top: 5rem;
+  }
+
+  .navbar.active {
+    top: 0;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar ul li {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .navbar ul a:hover {
+    color: var(--colorSecond);
+  }
+
+  /* HERO */
+
+  .tag-project::before {
+    left: 0;
+    width: 15px;
+    position: relative;
+    height: 15px;
+    transform: translateY(-50%); /* Agar kotak tepat di tengah teks */
+    margin-top: 15px;
+    margin-right: 5px; /* Sesuaikan jarak antara kotak dan teks */
+  }
+
+  .hero-project {
+    width: 100%;
+    background-color: var(--collorThird);
+    padding: 3rem 0;
+    margin-top: 0;
+  }
+
+  .hero-project .p-hero {
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 0 1.5rem;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .tag-project {
+    margin-bottom: 2rem;
+  }
+
+  .tag-project li {
+    font-size: 1.5rem;
+  }
+
+  .tamplate-project {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    height: 10rem;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+
+  @media only screen and (max-width: 450px) {
+    .tamplate-project {
+      width: 80%;
+
+      .hero-project .p-hero {
+        width: 80%;
+      }
+    }
+  }
+
+  .project-left .tag-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.8rem 0 5px 5px;
+  }
+
+  .project-right img {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+
+  .project-left .role ul {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 1.5rem;
+  }
+  .project-left {
+    display: flex;
+    background-color: var(--colorBody);
+    flex-direction: column;
+    padding: 0 0.5rem;
+    position: relative;
+  }
+
+  .role ul li {
+    border: 1px solid;
+    padding: 2px 3px;
+    font-weight: 400;
+  }
+
+  .project-left p {
+    font-size: 0.7rem;
+    font-weight: 100;
+  }
+
+  .tag-name .content {
+    height: 90%;
+    width: 6px;
+    background-color: black;
+    transform: translateX(-270%);
+  }
+  .project-name {
+    transform: translateX(-10%);
+  }
+
+  /* CONTACT */
+
+  .hero-contact {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 2rem;
+  }
+  .form-section {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  form {
+    margin-top: 2rem;
+  }
+
+  .container-email,
+  .subject {
+    margin: 0.8rem 0;
+  }
+
+  .tag-contact::before {
+    left: 0;
+    width: 15px;
+    position: relative;
+    height: 15px;
+    transform: translateY(-50%); /* Agar kotak tepat di tengah teks */
+    margin-top: 15px;
+    margin-right: 5px; /* Sesuaikan jarak antara kotak dan teks */
+  }
+
+  .tag-contact {
+    margin-bottom: 2rem;
+  }
+
+  .tag-contact li {
+    font-size: 1.5rem;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    height: 2rem;
+    border: 1px solid;
+    font-size: 0.7rem;
+    padding: 0 1rem;
+  }
+
+  .container-name,
+  .container-email {
+    gap: 5px;
+  }
+
+  form p {
+    font-size: 0.6rem;
+  }
+
+  .submit {
+    font-size: 0.8rem;
+  }
+
+  form textarea {
+    height: 5rem;
+    resize: none;
+  }
+
+  #hamburger {
+    height: 2.5rem;
+    width: 2.5rem;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  #hamburger span {
+    height: 5px;
+    width: 1.7rem;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    top: 5%;
+    right: 8px;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+    z-index: 100;
+  }
+
+  #hamburger span:nth-child(1) {
+    top: 3%;
+    right: 32px;
+    width: 0.7rem;
+  }
+
+  #hamburger span:nth-child(3) {
+    top: 7%;
+    height: 5px;
+    width: 0.7rem;
+    right: 17px;
+  }
+
+  #hamburger.active span:nth-child(1) {
+    top: 4%;
+    width: 1rem;
+    height: 3.5px;
+    transform: translate(1%, 30%) rotate(45deg);
+  }
+  #hamburger.active span:nth-child(2) {
+    height: 3.5px;
+
+    transform: translate(-50%, -50%) rotate(-50deg);
+  }
+  #hamburger.active span:nth-child(3) {
+    top: 5%;
+    /* background-color: aqua; */
+    height: 3.5px;
+    width: 1rem;
+    transform: translate(-40%, 75%) rotate(45deg);
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -774,6 +1111,229 @@
   .education-right {
     font-size: clamp(0.7rem, 2.5vw, 1rem);
   }
+
+  /* PROJECT */
+
+  .tag-project::before {
+    left: 0;
+    width: 15px;
+    position: relative;
+    height: 15px;
+    transform: translateY(-50%); /* Agar kotak tepat di tengah teks */
+    margin-top: 15px;
+    margin-right: 5px; /* Sesuaikan jarak antara kotak dan teks */
+  }
+
+  .hero-project {
+    width: 100%;
+    background-color: var(--collorThird);
+    padding: 3rem 0;
+    margin-top: 0;
+  }
+
+  .hero-project .p-hero {
+    font-size: 0.7rem;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .tag-project {
+    margin-bottom: 2rem;
+  }
+
+  .tag-project li {
+    font-size: 1.5rem;
+  }
+
+  .tamplate-project {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    height: 13rem;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+
+  /* @media only screen and (max-width: 680px) {
+    .tamplate-project {
+      width: 80%;
+    }
+  } */
+
+  .project-left .tag-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.8rem 0 5px 5px;
+  }
+
+  .project-right img {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+
+  .project-left .role ul {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 1.5rem;
+  }
+  .project-left {
+    display: flex;
+    background-color: var(--colorBody);
+    flex-direction: column;
+    padding: 0 0.5rem;
+    position: relative;
+  }
+
+  .role ul li {
+    border: 1px solid;
+    padding: 2px 3px;
+    font-weight: 400;
+  }
+
+  .project-left p {
+    font-size: 0.7rem;
+    font-weight: 100;
+  }
+
+  .tag-name .content {
+    height: 90%;
+    width: 6px;
+    background-color: black;
+    transform: translateX(-270%);
+  }
+  .project-name {
+    transform: translateX(-10%);
+  }
+
+  /* CONTACT */
+
+  .hero-contact {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 2rem;
+  }
+  .form-section {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  form {
+    margin-top: 2rem;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .container-email,
+  .subject {
+    margin: 0.8rem 0;
+  }
+
+  .tag-contact::before {
+    left: 0;
+    width: 15px;
+    position: relative;
+    height: 15px;
+    transform: translateY(-50%); /* Agar kotak tepat di tengah teks */
+    margin-top: 15px;
+    margin-right: 5px; /* Sesuaikan jarak antara kotak dan teks */
+  }
+
+  .tag-contact {
+    margin-bottom: 2rem;
+  }
+
+  .tag-contact li {
+    font-size: 1.5rem;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    height: 2rem;
+    border: 1px solid;
+    font-size: 0.7rem;
+    padding: 0 1rem;
+  }
+
+  .container-name,
+  .container-email {
+    gap: 5px;
+  }
+
+  form p {
+    font-size: 0.6rem;
+  }
+
+  .submit {
+    font-size: 0.8rem;
+  }
+
+  form textarea {
+    height: 5rem;
+    resize: none;
+  }
+
+  #hamburger {
+    height: 2.5rem;
+    width: 2.5rem;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  #hamburger span {
+    height: 5px;
+    width: 1.7rem;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    top: 5%;
+    right: 8px;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+    z-index: 100;
+  }
+
+  #hamburger span:nth-child(1) {
+    top: 3%;
+    right: 32px;
+    width: 0.7rem;
+  }
+
+  #hamburger span:nth-child(3) {
+    top: 7%;
+    height: 5px;
+    width: 0.7rem;
+    right: 17px;
+  }
+
+  #hamburger.active span:nth-child(1) {
+    top: 4%;
+    width: 1rem;
+    height: 3.5px;
+    transform: translate(1%, 30%) rotate(45deg);
+  }
+  #hamburger.active span:nth-child(2) {
+    height: 3.5px;
+
+    transform: translate(-50%, -50%) rotate(-50deg);
+  }
+  #hamburger.active span:nth-child(3) {
+    top: 5%;
+    /* background-color: aqua; */
+    height: 3.5px;
+    width: 1rem;
+    transform: translate(-40%, 75%) rotate(45deg);
+  }
+
+  @media only screen and (min-width: 680px) {
+    .submit {
+      font-size: 1rem;
+      padding: 5px 30px;
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -816,7 +1376,7 @@
     justify-content: space-between;
     align-items: center;
     margin-right: 1rem;
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
 
   #hamburger {
@@ -1154,6 +1714,165 @@
 
   .education-right {
     font-size: clamp(0.7rem, 2.5vw, 1rem);
+  }
+
+  /* PROJECT */
+
+  .tag-project::before {
+    left: 0;
+    width: 15px;
+    position: relative;
+    height: 15px;
+    transform: translateY(-50%); /* Agar kotak tepat di tengah teks */
+    margin-top: 15px;
+    margin-right: 5px; /* Sesuaikan jarak antara kotak dan teks */
+  }
+
+  .hero-project {
+    width: 100%;
+    background-color: var(--collorThird);
+    padding: 3rem 0;
+    margin-top: 0;
+  }
+
+  .hero-project .p-hero {
+    font-size: 0.7rem;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .tag-project {
+    margin-bottom: 2rem;
+  }
+
+  .tag-project li {
+    font-size: 1.5rem;
+  }
+
+  .tamplate-project {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    height: 13rem;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+
+  @media only screen and (min-width: 850px) {
+    .tamplate-project {
+      width: 50%;
+      height: 16rem;
+      margin-top: 2rem;
+    }
+
+    .hero-project .p-hero {
+      width: 50%;
+      font-size: 1rem;
+    }
+
+    .role ul {
+      padding-left: 7px;
+    }
+
+    .role ul li {
+      border: 1px solid;
+      padding: 5px 7px;
+      font-weight: 700;
+      font-size: 0.6rem;
+    }
+
+    .project-left .p-project {
+      font-size: 1rem;
+      padding-left: 7px;
+    }
+    .project-left .tag-name .project-name {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-top: 1rem;
+      padding: 0 0 5px 10px;
+    }
+
+    .project-left .tag-name {
+      padding-top: 1rem;
+    }
+
+    .hero-project .tag-name .content {
+      height: 30px;
+      width: 6px;
+      background-color: black;
+      transform: translateX(-230%);
+      margin-top: 0.8rem;
+    }
+  }
+
+  .project-left .tag-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.8rem 0 5px 5px;
+  }
+
+  .project-right img {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+
+  .project-left .role ul {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 1.5rem;
+  }
+  .project-left {
+    display: flex;
+    background-color: var(--colorBody);
+    flex-direction: column;
+    padding: 0 0.5rem;
+    position: relative;
+  }
+
+  .role ul li {
+    border: 1px solid;
+    padding: 2px 3px;
+    font-weight: 400;
+  }
+
+  .project-left p {
+    font-size: 0.7rem;
+    font-weight: 100;
+  }
+
+  .tag-name .content {
+    height: 90%;
+    width: 6px;
+    background-color: black;
+    transform: translateX(-270%);
+  }
+  .project-name {
+    transform: translateX(-10%);
+  }
+
+  /* CONTACT */
+  .container-name,
+  .container-email {
+    gap: 30px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 1.1rem;
+    height: 2.3rem;
+  }
+
+  form p {
+    font-size: 0.8rem;
+  }
+
+  @media only screen and (min-width: 850px) {
+    form {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -1529,6 +2248,189 @@
   .education-right {
     font-size: clamp(0.7rem, 2.5vw, 1rem);
   }
+
+  /* PROJECT */
+
+  .tag-project::before {
+    left: 0;
+    width: 15px;
+    position: relative;
+    height: 15px;
+    transform: translateY(-50%); /* Agar kotak tepat di tengah teks */
+    margin-top: 15px;
+    margin-right: 5px; /* Sesuaikan jarak antara kotak dan teks */
+  }
+
+  .hero-project {
+    width: 100%;
+    background-color: var(--collorThird);
+    padding: 3rem 0;
+    margin-top: 5rem;
+  }
+
+  .hero-project .p-hero {
+    font-size: 1rem;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .tag-project {
+    margin-bottom: 2rem;
+  }
+
+  .tag-project li {
+    font-size: 1.5rem;
+  }
+
+  .tamplate-project {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    height: 20rem;
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  /* @media only screen and (min-width: 1125px) {
+    .tamplate-project {
+      width: 50%;
+      height: 16rem;
+      margin-top: 2rem;
+    }
+
+    .hero-project .p-hero {
+      width: 50%;
+    }
+
+    .role ul {
+      padding-left: 7px;
+    }
+
+    .role ul li {
+      border: 1px solid;
+      padding: 5px 7px;
+      font-weight: 700;
+      font-size: 0.6rem;
+    }
+
+    .project-left .p-project {
+      font-size: 1rem;
+      padding-left: 7px;
+    }
+    .project-left .tag-name .project-name {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-top: 1rem;
+      padding: 0 0 5px 10px;
+    }
+
+    .project-left .tag-name {
+      padding-top: 1rem;
+    }
+
+    .hero-project .tag-name .content {
+      height: 30px;
+      width: 6px;
+      background-color: black;
+      transform: translateX(-230%);
+      margin-top: 0.8rem;
+    }
+  } */
+
+  .project-left .tag-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.8rem 0 5px 5px;
+    padding-top: 1rem;
+  }
+
+  .project-left .tag-name .project-name {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top: 1rem;
+    padding: 0 0 5px 10px;
+  }
+
+  .project-right img {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+
+  .project-left .role ul {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 1.5rem;
+    padding-left: 7px;
+  }
+  .project-left {
+    display: flex;
+    background-color: var(--colorBody);
+    flex-direction: column;
+    padding: 0 0.5rem;
+    position: relative;
+  }
+
+  .role ul li {
+    border: 1px solid;
+    padding: 5px 7px;
+    font-weight: 700;
+    font-size: 0.6rem;
+  }
+
+  .project-left p {
+    font-size: 0.7rem;
+    font-weight: 100;
+    width: 50%;
+  }
+
+  .tag-name .content {
+    height: 30px;
+    width: 6px;
+    background-color: black;
+    transform: translateX(-230%);
+    margin-top: 0.8rem;
+  }
+
+  .project-name {
+    transform: translateX(-10%);
+  }
+
+  .project-left .p-project {
+    font-size: 1rem;
+    padding-left: 7px;
+  }
+
+  /* CONTACT */
+
+  .hero-contact {
+    margin-top: 5rem;
+  }
+
+  form input,
+  form textarea {
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+
+  form {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  form p {
+    font-size: 1rem;
+  }
+
+  .container-name,
+  .container-email {
+    gap: 40px;
+  }
+
+  .submit {
+    font-size: 1.2rem;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1903,5 +2805,347 @@
   .education-right {
     font-size: 1.5rem;
     font-weight: 200;
+  }
+
+  .tag-project::before {
+    left: 0;
+    width: 15px;
+    position: relative;
+    height: 15px;
+    transform: translateY(-50%); /* Agar kotak tepat di tengah teks */
+    margin-top: 15px;
+    margin-right: 5px; /* Sesuaikan jarak antara kotak dan teks */
+  }
+
+  .hero-project {
+    width: 100%;
+    background-color: var(--collorThird);
+    padding: 3rem 0;
+    margin-top: 5rem;
+  }
+
+  .hero-project .p-hero {
+    font-size: 1rem;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .tag-project {
+    margin-bottom: 2rem;
+  }
+
+  .tag-project li {
+    font-size: 1.5rem;
+  }
+
+  .tamplate-project {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    height: 20rem;
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  /* @media only screen and (min-width: 1125px) {
+    .tamplate-project {
+      width: 50%;
+      height: 16rem;
+      margin-top: 2rem;
+    }
+
+    .hero-project .p-hero {
+      width: 50%;
+    }
+
+    .role ul {
+      padding-left: 7px;
+    }
+
+    .role ul li {
+      border: 1px solid;
+      padding: 5px 7px;
+      font-weight: 700;
+      font-size: 0.6rem;
+    }
+
+    .project-left .p-project {
+      font-size: 1rem;
+      padding-left: 7px;
+    }
+    .project-left .tag-name .project-name {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-top: 1rem;
+      padding: 0 0 5px 10px;
+    }
+
+    .project-left .tag-name {
+      padding-top: 1rem;
+    }
+
+    .hero-project .tag-name .content {
+      height: 30px;
+      width: 6px;
+      background-color: black;
+      transform: translateX(-230%);
+      margin-top: 0.8rem;
+    }
+  } */
+
+  .project-left .tag-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.8rem 0 5px 5px;
+    padding-top: 1rem;
+  }
+
+  .project-left .tag-name .project-name {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top: 1rem;
+    padding: 0 0 5px 10px;
+  }
+
+  .project-right img {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+
+  .project-left .role ul {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 1.5rem;
+    padding-left: 7px;
+  }
+
+  .project-left {
+    display: flex;
+    background-color: var(--colorBody);
+    flex-direction: column;
+    padding: 0 0.5rem;
+    position: relative;
+  }
+
+  .role ul li {
+    border: 1px solid;
+    padding: 5px 7px;
+    font-weight: 700;
+    font-size: 0.6rem;
+  }
+
+  .project-left p {
+    font-size: 0.7rem;
+    font-weight: 100;
+    width: 50%;
+  }
+
+  .tag-name .content {
+    height: 30px;
+    width: 6px;
+    background-color: black;
+    transform: translateX(-230%);
+    margin-top: 0.8rem;
+  }
+
+  .project-name {
+    transform: translateX(-10%);
+  }
+
+  .project-left .p-project {
+    font-size: 1rem;
+    padding-left: 7px;
+  }
+
+  /* CONTACT */
+
+  .hero-contact {
+    margin-top: 5rem;
+  }
+
+  .tag-contact li {
+    font-size: 2rem;
+  }
+
+  form {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  form p {
+    font-size: 1.2rem;
+  }
+
+  form input,
+  form textarea {
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+
+  .container-name,
+  .container-email {
+    gap: 3rem;
+  }
+
+  form textarea {
+    height: 10rem;
+    resize: none;
+  }
+
+  .submit {
+    font-size: 1.4rem;
+    padding: 5px 30px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .tag-project::before {
+    left: 0;
+    width: 15px;
+    position: relative;
+    height: 15px;
+    transform: translateY(-50%); /* Agar kotak tepat di tengah teks */
+    margin-top: 15px;
+    margin-right: 5px; /* Sesuaikan jarak antara kotak dan teks */
+  }
+
+  .hero-project {
+    width: 100%;
+    background-color: var(--collorThird);
+    padding: 3rem 0;
+    margin-top: 5rem;
+  }
+
+  .hero-project .p-hero {
+    font-size: 1rem;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .tag-project {
+    margin-bottom: 2rem;
+  }
+
+  .tag-project li {
+    font-size: 2rem;
+  }
+
+  .tamplate-project {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    height: 25rem;
+    width: 55%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  /* @media only screen and (min-width: 1125px) {
+    .tamplate-project {
+      width: 50%;
+      height: 16rem;
+      margin-top: 2rem;
+    }
+
+    .hero-project .p-hero {
+      width: 50%;
+    }
+
+    .role ul {
+      padding-left: 7px;
+    }
+
+    .role ul li {
+      border: 1px solid;
+      padding: 5px 7px;
+      font-weight: 700;
+      font-size: 0.6rem;
+    }
+
+    .project-left .p-project {
+      font-size: 1rem;
+      padding-left: 7px;
+    }
+    .project-left .tag-name .project-name {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-top: 1rem;
+      padding: 0 0 5px 10px;
+    }
+
+    .project-left .tag-name {
+      padding-top: 1rem;
+    }
+
+    .hero-project .tag-name .content {
+      height: 30px;
+      width: 6px;
+      background-color: black;
+      transform: translateX(-230%);
+      margin-top: 0.8rem;
+    }
+  } */
+
+  .project-left .tag-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.8rem 0 5px 5px;
+    padding-top: 1rem;
+  }
+
+  .project-left .tag-name .project-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 1rem;
+    padding: 0 0 5px 12px;
+  }
+
+  .project-right img {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+
+  .project-left .role ul {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 1.5rem;
+    padding-left: 7px;
+  }
+
+  .project-left {
+    display: flex;
+    background-color: var(--colorBody);
+    flex-direction: column;
+    padding: 0 0.5rem;
+    position: relative;
+  }
+
+  .role ul li {
+    border: 1px solid;
+    padding: 5px 7px;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
+  .tag-name .content {
+    height: 30px;
+    width: 6px;
+    background-color: black;
+    transform: translateX(-230%);
+    margin-top: 0.8rem;
+  }
+
+  .project-name {
+    transform: translateX(-10%);
+  }
+
+  .project-left p {
+    font-size: 1.3rem;
+    padding-left: 7px;
+    width: 100%;
   }
 }

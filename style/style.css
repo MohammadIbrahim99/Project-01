@@ -430,6 +430,7 @@ body {
   width: 100%;
   background-color: var(--collorThird);
   padding: 5rem 25rem;
+  margin-top: 5rem;
 }
 
 .tag-project {
@@ -439,6 +440,7 @@ body {
 .hero-project .p-hero {
   font-size: 1.2rem;
   text-align: center;
+  width: 100%;
 }
 
 .tamplate-project {
@@ -450,6 +452,7 @@ body {
   overflow: hidden;
   margin: 4rem 0;
 }
+
 .project-right {
   height: 100%;
   border: 2px solid black;
@@ -507,7 +510,7 @@ body {
   display: flex;
   background-color: var(--colorBody);
   flex-direction: column;
-  padding: 0 2.5rem;
+  padding: 0 1rem;
   position: relative;
 }
 
@@ -531,6 +534,7 @@ body {
   border: 2px solid;
   padding: 2px 3px;
   font-weight: 800;
+  font-size: 0.3rem;
 }
 
 .tag-name {
@@ -554,6 +558,12 @@ body {
 }
 
 /* CONTACT */
+
+.hero-contact {
+  width: 100%;
+  background-color: var(--collorThird);
+  padding: 5rem 25rem;
+}
 
 .hero-contact {
   background-color: var(--collorThird);
