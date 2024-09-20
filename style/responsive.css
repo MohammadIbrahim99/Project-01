@@ -907,7 +907,7 @@
   .hero-left {
     background-color: var(--colorBody);
     height: 40vh;
-    margin-top: 10rem;
+    margin-top: 10rem; /*di leptop margin-top:0; tidak responsiv di hp*/
   }
   .hero-right {
     background-color: var(--colorSecond);
